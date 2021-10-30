@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dfcd5c7aa3e14387b61a0bc3e5e47b86" Name="Diagram1">
+        <EntityTypeShape EntityType="moolansModel.adminTable" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="moolansModel.Product" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="moolansModel.Vendor" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="moolansModel.Location" Width="1.5" PointX="3.375" PointY="3.75" />
+        <EntityTypeShape EntityType="moolansModel.MonthsCode" Width="1.5" PointX="5.375" PointY="3.75" />
+        <EntityTypeShape EntityType="moolansModel.Customer" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="moolansModel.Order" Width="1.5" PointX="3.375" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

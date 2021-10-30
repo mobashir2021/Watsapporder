@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="moolansModelStoreContainer" CdmEntityContainer="moolansEntities1">
+    <EntitySetMapping Name="adminTables">
+      <EntityTypeMapping TypeName="moolansModel.adminTable">
+        <MappingFragment StoreEntitySet="adminTable">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Mobileno" ColumnName="Mobileno" />
+          <ScalarProperty Name="Adminid" ColumnName="Adminid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="moolansModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Baseprice" ColumnName="Baseprice" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+          <ScalarProperty Name="Productname" ColumnName="Productname" />
+          <ScalarProperty Name="Productid" ColumnName="Productid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vendors">
+      <EntityTypeMapping TypeName="moolansModel.Vendor">
+        <MappingFragment StoreEntitySet="Vendors">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Locationid" ColumnName="Locationid" />
+          <ScalarProperty Name="RegisteredMobileno" ColumnName="RegisteredMobileno" />
+          <ScalarProperty Name="Vendorname" ColumnName="Vendorname" />
+          <ScalarProperty Name="Vendorid" ColumnName="Vendorid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locations">
+      <EntityTypeMapping TypeName="moolansModel.Location">
+        <MappingFragment StoreEntitySet="Location">
+          <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+          <ScalarProperty Name="Location1" ColumnName="Location" />
+          <ScalarProperty Name="Locationid" ColumnName="Locationid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonthsCodes">
+      <EntityTypeMapping TypeName="moolansModel.MonthsCode">
+        <MappingFragment StoreEntitySet="MonthsCode">
+          <ScalarProperty Name="MonthsCode1" ColumnName="MonthsCode" />
+          <ScalarProperty Name="MonthsName" ColumnName="MonthsName" />
+          <ScalarProperty Name="MonthsCodeId" ColumnName="MonthsCodeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="moolansModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Locationid" ColumnName="Locationid" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="OrderSerialNo" ColumnName="OrderSerialNo" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="Productid" ColumnName="Productid" />
+          <ScalarProperty Name="Ordertext" ColumnName="Ordertext" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Imagepath" ColumnName="Imagepath" />
+          <ScalarProperty Name="Customerid" ColumnName="Customerid" />
+          <ScalarProperty Name="Orderid" ColumnName="Orderid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="moolansModel.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Locationid" ColumnName="Locationid" />
+          <ScalarProperty Name="Customermobileno" ColumnName="Customermobileno" />
+          <ScalarProperty Name="Customername" ColumnName="Customername" />
+          <ScalarProperty Name="Customerid" ColumnName="Customerid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

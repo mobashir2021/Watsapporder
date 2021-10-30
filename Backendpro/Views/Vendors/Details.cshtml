@@ -1,0 +1,51 @@
+﻿@model Backendpro.Models.Vendor
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vendor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Vendorname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vendorname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegisteredMobileno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegisteredMobileno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Locationid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Locationid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Vendorid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="moolansModelStoreContainer" CdmEntityContainer="moolansEntities">
+    <EntitySetMapping Name="Vendors">
+      <EntityTypeMapping TypeName="moolansModel.Vendor">
+        <MappingFragment StoreEntitySet="Vendors">
+          <ScalarProperty Name="Vendorid" ColumnName="Vendorid" />
+          <ScalarProperty Name="Vendorname" ColumnName="Vendorname" />
+          <ScalarProperty Name="RegisteredMobileno" ColumnName="RegisteredMobileno" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

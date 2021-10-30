@@ -1,0 +1,137 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+
+<div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+            <div class="card-header card-header-warning card-header-icon">
+                <div class="card-icon">
+                    <i class="material-icons">content_copy</i>
+                </div>
+                <p class="card-category">New Customer</p>
+                <h3 class="card-title">
+                    12
+
+                </h3>
+            </div>
+            <div class="card-footer">
+                <div class="stats">
+                    <i class="material-icons text-danger">warning</i>
+                    <a href="javascript:;">See More Information...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+            <div class="card-header card-header-success card-header-icon">
+                <div class="card-icon">
+                    <i class="material-icons">store</i>
+                </div>
+                <p class="card-category">Previous Customers</p>
+                <h3 class="card-title">13</h3>
+            </div>
+            <div class="card-footer">
+                <div class="stats">
+                    <i class="material-icons">date_range</i> See More Information...
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+            <div class="card-header card-header-danger card-header-icon">
+                <div class="card-icon">
+                    <i class="material-icons">info_outline</i>
+                </div>
+                <p class="card-category">Number of Vendors</p>
+                <h3 class="card-title">75</h3>
+            </div>
+            <div class="card-footer">
+                <div class="stats">
+                    <i class="material-icons">local_offer</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@*@model IEnumerable<Backendpro.Models.VendorRows>
+
+    @{
+        ViewBag.Title = "Dashboard";
+    }
+    @foreach (var item in Model)
+    {
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">info_outline</i>
+                        </div>
+                        <p class="card-category">@item.coltwo.vendorname</p>
+                        <div class="card-title">
+                            <span>New Orders :</span> <span>@item.colone.Neworders</span><br />
+                            <span>Pending Orders :</span> <span>@item.colone.Neworders</span><br />
+                            <span>Completed Orders :</span> <span>@item.colone.Completedorders</span>
+
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="material-icons text-danger">store</i>
+                            <a href="javascript:;">@item.colone.Vendormobileno</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-success card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">store</i>
+                        </div>
+                        <p class="card-category">@item.coltwo.vendorname</p>
+                        <div class="card-title">
+                            <span>New Orders :</span> <span>@item.coltwo.Neworders</span><br />
+                            <span>Pending Orders :</span> <span>@item.coltwo.Neworders</span><br />
+                            <span>Completed Orders :</span> <span>@item.coltwo.Completedorders</span>
+
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="material-icons text-danger">local_offer</i>
+                            <a href="javascript:;">@item.coltwo.Vendormobileno</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">info_outline</i>
+                        </div>
+                        <p class="card-category">@item.colthree.vendorname</p>
+                        <div class="card-title">
+                            <span>New Orders :</span> <span>@item.colthree.Neworders</span><br />
+                            <span>Pending Orders :</span> <span>@item.colthree.Neworders</span><br />
+                            <span>Completed Orders :</span> <span>@item.colthree.Completedorders</span>
+
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="material-icons">store</i>
+                            <a href="javascript:;">@item.colthree.Vendormobileno</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    }*@

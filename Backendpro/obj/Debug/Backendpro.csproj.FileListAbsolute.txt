@@ -1,0 +1,182 @@
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\Backendpro.dll.config
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\Backendpro.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\Backendpro.pdb
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\csc.exe
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\csc.exe.config
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\csc.rsp
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\csi.exe
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\csi.exe.config
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\csi.rsp
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\Microsoft.Managed.Core.targets
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.AppContext.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Collections.Immutable.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Console.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.IO.Compression.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.IO.FileSystem.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.IO.Pipes.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Reflection.Metadata.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Security.AccessControl.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Security.Claims.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Security.Principal.Windows.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.ValueTuple.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Xml.XmlDocument.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Xml.XPath.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\vbc.exe
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\vbc.exe.config
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\vbc.rsp
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\VBCSCompiler.exe
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\roslyn\VBCSCompiler.exe.config
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\Antlr3.Runtime.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\Microsoft.Web.Infrastructure.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\Newtonsoft.Json.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Net.Http.Formatting.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.Helpers.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.Http.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.Http.WebHost.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.Mvc.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.Optimization.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.Razor.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.WebPages.Deployment.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.WebPages.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.WebPages.Razor.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\WebGrease.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.Helpers.xml
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.Mvc.xml
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.Optimization.xml
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.Razor.xml
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.WebPages.xml
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.WebPages.Deployment.xml
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.WebPages.Razor.xml
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\Newtonsoft.Json.xml
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\Antlr3.Runtime.pdb
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Net.Http.Formatting.xml
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.Http.xml
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\System.Web.Http.WebHost.xml
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\obj\Debug\Backendpro.csprojAssemblyReference.cache
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\obj\Debug\Backendpro.csproj.CopyComplete
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\obj\Debug\Backendpro.dll
+D:\projects folder\jaseek\BackendProject\Backendpro\Backendpro\obj\Debug\Backendpro.pdb
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Backendpro.dll.config
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Backendpro.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Backendpro.pdb
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\csc.exe
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\csc.exe.config
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\csc.rsp
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\csi.exe
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\csi.exe.config
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\csi.rsp
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.AppContext.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Console.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.IO.Compression.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.IO.Pipes.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Security.Claims.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.ValueTuple.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Xml.XPath.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\vbc.exe
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\vbc.exe.config
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\vbc.rsp
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\VBCSCompiler.exe
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Antlr3.Runtime.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\EntityFramework.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\EntityFramework.SqlServer.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Newtonsoft.Json.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Configuration.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Net.Http.Formatting.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Net.Http.WebRequest.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Abstractions.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.ApplicationServices.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.DynamicData.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Extensions.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Helpers.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Http.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Http.WebHost.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Mvc.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Optimization.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Razor.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Routing.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.WebPages.Deployment.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.WebPages.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.WebPages.Razor.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Twilio.AspNet.Common.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Twilio.AspNet.Mvc.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Twilio.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\WebGrease.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\EntityFramework.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\EntityFramework.SqlServer.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Helpers.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Mvc.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Optimization.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Razor.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.WebPages.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.WebPages.Deployment.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.WebPages.Razor.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Newtonsoft.Json.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Twilio.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Antlr3.Runtime.pdb
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Net.Http.Formatting.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Http.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\System.Web.Http.WebHost.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\admin\source\repos\Backendpro\Backendpro\obj\Debug\Backendpro.csproj.CopyComplete
+C:\Users\admin\source\repos\Backendpro\Backendpro\obj\Debug\Backendpro.dll
+C:\Users\admin\source\repos\Backendpro\Backendpro\obj\Debug\Backendpro.pdb

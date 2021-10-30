@@ -1,0 +1,37 @@
+﻿@model Backendpro.Models.Location
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Location</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Location1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location1)
+        </dd>
+
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Locationid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

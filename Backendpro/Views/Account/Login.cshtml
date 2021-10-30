@@ -1,0 +1,137 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    
+        
+            <div class="box">
+                
+                <div class="title">
+                    <div><img src="~/assets/img/maloonlogo.png" width="380" height="130" /></div>
+                    <h4 style="color:#ED2553; font-weight:bold; font-size:22px;">LOGIN</h4>
+                </div>
+
+                <div class="input">
+                    <label for="name">Mobile Number</label>
+                    <input type="text" name="name" id="name">
+                    <span class="spin"></span>
+                </div>
+
+                <div class="input">
+                    
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass">
+                    <span class="spin"></span>
+
+
+
+                </div>
+
+                <div class="input">
+                    <div class="boxse">
+                        <select name="logintype">
+                            <option selected value="Admin">Admin</option>
+                            <option value="Vendor">Vendor</option>
+
+                        </select>
+                    </div>
+                </div>
+
+
+                @*<div class="dropdown">
+                <input id="checkbox1" type="checkbox" name="checkbox" checked />
+                <label for="checkbox1">
+                    <div class="drop-ttl">Select Logintype</div>
+                    <ul>
+
+                        <li>Admin</li>
+                        <li>Vendor</li>
+
+                    </ul>
+
+
+                </label>
+            </div>*@
+
+
+                <div class="button login">
+                    <button type="submit" name="go"><span>GO</span> <i class="fa fa-check"></i></button>
+                </div>
+
+                <a href="" class="pass-forgot">Forgot your password?</a><br />
+                <div class="clearfix"></div>
+                <span>@ViewBag.Message</span>
+
+            </div>
+
+            <div class="overbox">
+                <div class="material-button alt-2"><span class="shape"></span></div>
+
+                <div class="title">REGISTER</div>
+                <div class="input">
+                    <label for="vendorname">Vendor Name</label>
+                    <input type="text" name="vendorname" id="vendorname">
+                    <span class="spin"></span>
+                </div>
+
+                <div class="input">
+                    <label for="regname">Mobile Number</label>
+                    <input type="text" name="regname" id="regname">
+                    <span class="spin"></span>
+                </div>
+
+                <div class="input">
+                    <label for="regpass">Password</label>
+                    <input type="password" name="regpass" id="regpass">
+                    <span class="spin"></span>
+                </div>
+
+                <div class="input">
+                    <label for="location">Enter Location</label>
+                    <input type="text" name="location" id="location">
+                    <span class="spin"></span>
+                    @*@Html.DropDownList("Location", ViewBag.locationlist as SelectList, "Select Location", new { @class = "form-control", Name = "Location" })*@
+                </div>
+
+                <div class="button">
+                    <button type="submit" name="next"><span>NEXT</span></button>
+                </div>
+
+
+            </div>
+        
+        
+        
+    
+    
+}
+
+@section scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#location").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: "/Account/GetLocation",
+                        type: "POST",
+                        dataType: "json",
+                        data: { Prefix: request.term },
+                        success: function (data) {
+                            response($.map(data, function (item) {
+                                return { label: item.Location1, value: item.Location1 };
+                            }))
+
+                        }
+                    })
+                },
+                messages: {
+                    noResults: "", results: ""
+                }
+            });
+        });
+    </script>
+    
+}

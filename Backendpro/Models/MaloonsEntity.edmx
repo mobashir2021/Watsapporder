@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="moolansModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="adminTable">
+          <Key>
+            <PropertyRef Name="Adminid" />
+          </Key>
+          <Property Name="Adminid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Mobileno" Type="varchar" MaxLength="1000" />
+          <Property Name="Password" Type="varchar" MaxLength="1000" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="Customers">
+          <Key>
+            <PropertyRef Name="Customerid" />
+          </Key>
+          <Property Name="Customerid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Customername" Type="varchar" MaxLength="1000" />
+          <Property Name="Customermobileno" Type="varchar" MaxLength="100" />
+          <Property Name="Locationid" Type="int" />
+          <Property Name="Password" Type="varchar" MaxLength="1000" />
+          <Property Name="Address" Type="nvarchar" MaxLength="3000" />
+        </EntityType>
+        <EntityType Name="Location">
+          <Key>
+            <PropertyRef Name="Locationid" />
+          </Key>
+          <Property Name="Locationid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Location" Type="varchar" MaxLength="1000" />
+          <Property Name="LocationCode" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="MonthsCode">
+          <Key>
+            <PropertyRef Name="MonthsCodeId" />
+          </Key>
+          <Property Name="MonthsCodeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MonthsName" Type="varchar" MaxLength="40" />
+          <Property Name="MonthsCode" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="Orderid" />
+          </Key>
+          <Property Name="Orderid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Customerid" Type="int" />
+          <Property Name="Imagepath" Type="varchar" MaxLength="2000" />
+          <Property Name="Status" Type="varchar" MaxLength="1000" />
+          <Property Name="Ordertext" Type="nvarchar" MaxLength="4000" />
+          <Property Name="Productid" Type="int" />
+          <Property Name="quantity" Type="int" />
+          <Property Name="OrderSerialNo" Type="varchar" MaxLength="100" />
+          <Property Name="OrderDate" Type="datetime" />
+          <Property Name="Locationid" Type="int" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Productid" />
+          </Key>
+          <Property Name="Productid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Productname" Type="varchar" MaxLength="1000" />
+          <Property Name="ProductImage" Type="varchar" MaxLength="1000" />
+          <Property Name="Units" Type="varchar" MaxLength="100" />
+          <Property Name="Baseprice" Type="varchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="Vendors">
+          <Key>
+            <PropertyRef Name="Vendorid" />
+          </Key>
+          <Property Name="Vendorid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Vendorname" Type="varchar" MaxLength="1000" />
+          <Property Name="RegisteredMobileno" Type="varchar" MaxLength="100" />
+          <Property Name="Locationid" Type="int" />
+          <Property Name="Password" Type="varchar" MaxLength="1000" />
+          <Property Name="Status" Type="varchar" MaxLength="1000" />
+        </EntityType>
+        <EntityContainer Name="moolansModelStoreContainer">
+          <EntitySet Name="adminTable" EntityType="Self.adminTable" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Location" EntityType="Self.Location" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MonthsCode" EntityType="Self.MonthsCode" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Vendors" EntityType="Self.Vendors" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="moolansModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="moolansEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="adminTables" EntityType="moolansModel.adminTable" />
+          <EntitySet Name="Products" EntityType="moolansModel.Product" />
+          <EntitySet Name="Vendors" EntityType="moolansModel.Vendor" />
+          <EntitySet Name="Locations" EntityType="moolansModel.Location" />
+          <EntitySet Name="MonthsCodes" EntityType="moolansModel.MonthsCode" />
+          <EntitySet Name="Orders" EntityType="moolansModel.Order" />
+          <EntitySet Name="Customers" EntityType="moolansModel.Customer" />
+        </EntityContainer>
+        <EntityType Name="adminTable">
+          <Key>
+            <PropertyRef Name="Adminid" />
+          </Key>
+          <Property Name="Adminid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Mobileno" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Productid" />
+          </Key>
+          <Property Name="Productid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Productname" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ProductImage" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Units" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Baseprice" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Vendor">
+          <Key>
+            <PropertyRef Name="Vendorid" />
+          </Key>
+          <Property Name="Vendorid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Vendorname" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="RegisteredMobileno" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Locationid" Type="Int32" />
+          <Property Name="Password" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Location">
+          <Key>
+            <PropertyRef Name="Locationid" />
+          </Key>
+          <Property Name="Locationid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Location1" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="LocationCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="MonthsCode">
+          <Key>
+            <PropertyRef Name="MonthsCodeId" />
+          </Key>
+          <Property Name="MonthsCodeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MonthsName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="MonthsCode1" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="Orderid" />
+          </Key>
+          <Property Name="Orderid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Customerid" Type="Int32" />
+          <Property Name="Imagepath" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Ordertext" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="Productid" Type="Int32" />
+          <Property Name="quantity" Type="Int32" />
+          <Property Name="OrderSerialNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="OrderDate" Type="DateTime" Precision="3" />
+          <Property Name="Locationid" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="Customerid" />
+          </Key>
+          <Property Name="Customerid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Customername" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Customermobileno" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Locationid" Type="Int32" />
+          <Property Name="Password" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="moolansModelStoreContainer" CdmEntityContainer="moolansEntities1">
+          <EntitySetMapping Name="adminTables">
+            <EntityTypeMapping TypeName="moolansModel.adminTable">
+              <MappingFragment StoreEntitySet="adminTable">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Mobileno" ColumnName="Mobileno" />
+                <ScalarProperty Name="Adminid" ColumnName="Adminid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="moolansModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="Baseprice" ColumnName="Baseprice" />
+                <ScalarProperty Name="Units" ColumnName="Units" />
+                <ScalarProperty Name="ProductImage" ColumnName="ProductImage" />
+                <ScalarProperty Name="Productname" ColumnName="Productname" />
+                <ScalarProperty Name="Productid" ColumnName="Productid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Vendors">
+            <EntityTypeMapping TypeName="moolansModel.Vendor">
+              <MappingFragment StoreEntitySet="Vendors">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Locationid" ColumnName="Locationid" />
+                <ScalarProperty Name="RegisteredMobileno" ColumnName="RegisteredMobileno" />
+                <ScalarProperty Name="Vendorname" ColumnName="Vendorname" />
+                <ScalarProperty Name="Vendorid" ColumnName="Vendorid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Locations">
+            <EntityTypeMapping TypeName="moolansModel.Location">
+              <MappingFragment StoreEntitySet="Location">
+                <ScalarProperty Name="LocationCode" ColumnName="LocationCode" />
+                <ScalarProperty Name="Location1" ColumnName="Location" />
+                <ScalarProperty Name="Locationid" ColumnName="Locationid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MonthsCodes">
+            <EntityTypeMapping TypeName="moolansModel.MonthsCode">
+              <MappingFragment StoreEntitySet="MonthsCode">
+                <ScalarProperty Name="MonthsCode1" ColumnName="MonthsCode" />
+                <ScalarProperty Name="MonthsName" ColumnName="MonthsName" />
+                <ScalarProperty Name="MonthsCodeId" ColumnName="MonthsCodeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="moolansModel.Order">
+              <MappingFragment StoreEntitySet="Orders">
+                <ScalarProperty Name="Locationid" ColumnName="Locationid" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="OrderSerialNo" ColumnName="OrderSerialNo" />
+                <ScalarProperty Name="quantity" ColumnName="quantity" />
+                <ScalarProperty Name="Productid" ColumnName="Productid" />
+                <ScalarProperty Name="Ordertext" ColumnName="Ordertext" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Imagepath" ColumnName="Imagepath" />
+                <ScalarProperty Name="Customerid" ColumnName="Customerid" />
+                <ScalarProperty Name="Orderid" ColumnName="Orderid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Customers">
+            <EntityTypeMapping TypeName="moolansModel.Customer">
+              <MappingFragment StoreEntitySet="Customers">
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Locationid" ColumnName="Locationid" />
+                <ScalarProperty Name="Customermobileno" ColumnName="Customermobileno" />
+                <ScalarProperty Name="Customername" ColumnName="Customername" />
+                <ScalarProperty Name="Customerid" ColumnName="Customerid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

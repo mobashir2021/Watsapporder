@@ -1,0 +1,116 @@
+﻿@model IEnumerable<Backendpro.Models.OrderVM>
+@{
+    ViewBag.Title = "PreviousOrders";
+    if (ViewBag.logintype == "Admin")
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    if (ViewBag.logintype == "Vendor")
+    {
+        Layout = "~/Views/Shared/_LayoutVendor.cshtml";
+    }
+    WebGrid webGrid = new WebGrid(Model);
+}
+
+<h4>Previous Orders</h4>
+
+<style type="text/css">
+    body {
+        font-family: Arial;
+        font-size: 10pt;
+    }
+
+    .Grid {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+    }
+
+        .Grid th {
+            background-color: #F7F7F7;
+            font-weight: bold;
+        }
+
+        .Grid th, .Grid td {
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .Grid, .Grid table td {
+            border: 0px solid #ccc;
+        }
+
+            .Grid th a, .Grid th a:visited {
+                color: #333;
+            }
+</style>
+
+
+
+
+
+@using (Html.BeginForm("FilterdatePre", "OrdersDetail", FormMethod.Get))
+{
+    <div class="row">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-3">
+            <input type="datetime" name="startdate" placeholder="CHOOSE START DATE" value="@ViewBag.Start" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <input type="datetime" name="enddate" placeholder="CHOOSE END DATE" value="@ViewBag.End" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <input type="submit" class="btn btn-primary" value="Search" />
+        </div>
+    </div>
+}
+
+
+
+@webGrid.GetHtml(
+    tableStyle: "table table-bordered table-striped mr",
+    rowStyle: "gridrow",
+    alternatingRowStyle: "gridalt",
+        htmlAttributes: new { @id = "WebGrid", @class = "Grid" },
+        columns: webGrid.Columns(
+                 webGrid.Column("Customername", "Customer Name"),
+                 webGrid.Column("CustomerMobileno", "Customer Mobile"),
+                 webGrid.Column("Ordertext", "Orders"),
+                 webGrid.Column("Location", "Location"),
+
+                 webGrid.Column(format: (item) =>
+                 {
+                     if (item.isButtonDisabled == false)
+                     {
+                         return Html.ActionLink("Dispatch", "CompleteOrder", "OrdersDetail", new { Orderid = item.Orderid }, null);
+                     }
+                     else
+                     {
+                         return Html.Label("Completed");
+                     }
+                 }
+
+
+
+
+                 )
+
+))
+
+@section scripts{
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('input[type=datetime]').datepicker({
+                dateFormat: "dd/M/yy",
+                changeMonth: true,
+                changeYear: true
+            });
+
+        });
+
+
+
+    </script>
+}

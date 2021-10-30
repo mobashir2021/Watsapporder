@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Backendpro.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Productname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductImage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Units)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Baseprice)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Productname)
+        </td>
+        <td>
+            <img src="@Url.Content("~/UploadedFiles/" + item.ProductImage)" alt="Image" style="height:40px;width:40px;" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Units)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Baseprice)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Productid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Productid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Productid })
+        </td>
+    </tr>
+}
+
+</table>

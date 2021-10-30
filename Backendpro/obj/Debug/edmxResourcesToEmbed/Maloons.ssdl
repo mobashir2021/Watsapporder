@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="moolansModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Vendors">
+    <Key>
+      <PropertyRef Name="Vendorid" />
+    </Key>
+    <Property Name="Vendorid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Vendorname" Type="varchar" MaxLength="1000" />
+    <Property Name="RegisteredMobileno" Type="varchar" MaxLength="100" />
+    <Property Name="Location" Type="varchar" MaxLength="1000" />
+    <Property Name="Password" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityContainer Name="moolansModelStoreContainer">
+    <EntitySet Name="Vendors" EntityType="Self.Vendors" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

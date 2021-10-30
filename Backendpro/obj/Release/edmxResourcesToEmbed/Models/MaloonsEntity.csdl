@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="moolansModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="moolansEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="adminTables" EntityType="moolansModel.adminTable" />
+    <EntitySet Name="Products" EntityType="moolansModel.Product" />
+    <EntitySet Name="Vendors" EntityType="moolansModel.Vendor" />
+    <EntitySet Name="Locations" EntityType="moolansModel.Location" />
+    <EntitySet Name="MonthsCodes" EntityType="moolansModel.MonthsCode" />
+    <EntitySet Name="Orders" EntityType="moolansModel.Order" />
+    <EntitySet Name="Customers" EntityType="moolansModel.Customer" />
+  </EntityContainer>
+  <EntityType Name="adminTable">
+    <Key>
+      <PropertyRef Name="Adminid" />
+    </Key>
+    <Property Name="Adminid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Mobileno" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Productid" />
+    </Key>
+    <Property Name="Productid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Productname" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="ProductImage" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Units" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Baseprice" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Vendor">
+    <Key>
+      <PropertyRef Name="Vendorid" />
+    </Key>
+    <Property Name="Vendorid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Vendorname" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="RegisteredMobileno" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Locationid" Type="Int32" />
+    <Property Name="Password" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="Locationid" />
+    </Key>
+    <Property Name="Locationid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Location1" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="LocationCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="MonthsCode">
+    <Key>
+      <PropertyRef Name="MonthsCodeId" />
+    </Key>
+    <Property Name="MonthsCodeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MonthsName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="MonthsCode1" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Orderid" />
+    </Key>
+    <Property Name="Orderid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Customerid" Type="Int32" />
+    <Property Name="Imagepath" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Ordertext" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="Productid" Type="Int32" />
+    <Property Name="quantity" Type="Int32" />
+    <Property Name="OrderSerialNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="OrderDate" Type="DateTime" Precision="3" />
+    <Property Name="Locationid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Customerid" />
+    </Key>
+    <Property Name="Customerid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Customername" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Customermobileno" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Locationid" Type="Int32" />
+    <Property Name="Password" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

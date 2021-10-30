@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Backendpro.Models.OrderVM>
+@{
+    ViewBag.Title = "Orders";
+    if (ViewBag.logintype == "Admin")
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    if (ViewBag.logintype == "Vendor")
+    {
+        Layout = "~/Views/Shared/_LayoutVendor.cshtml";
+    }
+
+    WebGrid webGrid = new WebGrid(Model);
+}
+
+<h4>New Orders</h4>
+
+<style type="text/css">
+    body {
+        font-family: Arial;
+        font-size: 10pt;
+    }
+
+    .Grid {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+    }
+
+        .Grid th {
+            background-color: #F7F7F7;
+            font-weight: bold;
+        }
+
+        .Grid th, .Grid td {
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .Grid, .Grid table td {
+            border: 0px solid #ccc;
+        }
+
+            .Grid th a, .Grid th a:visited {
+                color: #333;
+            }
+</style>
+
+@webGrid.GetHtml(
+    tableStyle: "table table-bordered table-striped mr",
+    rowStyle: "gridrow",
+    alternatingRowStyle: "gridalt",
+        htmlAttributes: new { @id = "WebGrid", @class = "Grid" },
+        columns: webGrid.Columns(
+                 webGrid.Column("CustomerMobileno", "Customer Mobile"),
+                 webGrid.Column("Ordertext", "Orders List"),
+                 webGrid.Column(header: "Order Snap", format: @<text>@Html.Raw("<input type='button' value='View Order Snapshot' onclick='seeImage(" + item.Orderid + ")'  />")</text>),
+webGrid.Column("Location", "Location"),
+webGrid.Column("Status", "Status")
+
+))
+
+<div id="openpopup" style="display:none;"></div>
+
+@section scripts{
+
+    <script type="text/javascript">
+        function seeImage(orderid) {
+            var x = $('#openpopup');
+            x.load("/OrdersDetail/SeeOrderImage?orderid=" + orderid, function () {
+                x.dialog({
+                    show: {
+                        effect: "blind",
+                        duration: 1000
+                    },
+                    hide: {
+                        effect: "explode",
+                        duration: 1000
+                    },
+                    modal: true,
+                    width: 550,
+                    height: 550,
+                    title: "Order Snapshot",
+                    resizable: false
+                });
+            });
+        }
+    </script>
+}
+

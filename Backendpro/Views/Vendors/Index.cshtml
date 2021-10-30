@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Backendpro.Models.Vendor>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Vendorname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegisteredMobileno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Locationid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vendorname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegisteredMobileno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Locationid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Vendorid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Vendorid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Vendorid })
+        </td>
+    </tr>
+}
+
+</table>
